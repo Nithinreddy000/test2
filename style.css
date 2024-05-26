@@ -1,0 +1,161 @@
+body{
+    overflow-y: scroll; /* Ensure vertical scrolling is enabled */
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video is behind other content */
+    overflow: hidden;
+}
+#background-video {
+    object-fit: cover; /* Ensure the video covers the entire viewport */
+}
+.HHHH {
+    display: flex;
+    justify-content: left;
+    padding-right: 250px;
+}
+.HHHH .nav-link {
+    color: black !important;
+    font-size: larger;
+}
+.content {
+    display: flex;
+    justify-content: right !important;
+}
+.buttons .btn {
+    background-color: #9e3ffd !important; /* Change background color to #9e3ffd */
+    color: white !important; /* Change text color to white */
+    border: none; /* Remove border */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-size: larger !important;
+}
+.buttons .btn:hover {
+    background-color: rgb(75, 75, 226) !important; /* Change background color to rgb(22, 22, 63) on hover */
+    color: white !important; /* Ensure text color remains white on hover */
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding-left: 170px;
+    padding-top: 7px;
+}
+.logo img {
+    height: 30px; /* Adjust the height as needed */
+}
+.header-top {
+    border-top: 5px solid #a0138e;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    position: fixed; /* Make the header fixed at the top */
+    width: 100%; /* Ensure it spans the entire width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    background-color: transparent; /* Initial transparent background */
+    padding: 20px;
+}
+.header-top.scrolled {
+    background-color:white /* Change background color when scrolled */
+}
+.main {
+    height: 800px;
+}
+.infinityerp {
+    padding-left: 150px;
+    padding-top: 200px;
+}
+.features {
+    display: grid;
+    grid-template-columns:300px 300px 300px 300px; /* Use repeat function to create 4 equal width columns */
+    grid-template-rows:  10px 200px 200px;
+    gap: 80px;
+    justify-items: center; /* Center the grid items horizontally */
+    align-items: center;   /* Center the grid items vertically */
+    height: 100vh;   /* Set the height of the grid to occupy the entire viewport height */
+    padding: 10px;   /* Add padding to the grid */
+    box-sizing: border-box;  /* Include padding and borders in the total width and height */
+}
+section.features {
+    position: relative !important;
+    background-color: #fff !important; /* Specify a background color for the section */
+}
+section.features .video-background {
+    display: none !important; /* Hide the video background */
+}
+@keyframes floatIn {
+    0% {
+        transform: translateY(50px); /* Move the element down */
+        opacity: 0; /* Make the element transparent */
+    }
+    100% {
+        transform: translateY(0); /* Move the element back to its original position */
+        opacity: 1; /* Make the element fully opaque */
+    }
+    }
+    .float-in {
+    animation: floatIn 1s ease forwards; /* Apply the float in animation to the element */
+    }
+@keyframes foldIn {
+    0% {
+        transform: perspective(400px) rotateY(-90deg); /* Start with the element folded */
+        opacity: 0; /* Make the element transparent */
+    }
+    100% {
+        transform: perspective(400px) rotateY(0); /* Fold the element back to its original state */
+        opacity: 1; /* Make the element fully opaque */
+    }
+    }
+    .fold-in {
+    animation: foldIn 1s ease forwards; /* Apply the fold in animation to the element */
+    }
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    .fade-in-up {
+    animation: fadeInUp 1s ease forwards;
+    }
+    .feature {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .feature-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50%;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    .feature-icon img {
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .feature p {
+        margin: 5px 0; /* Adjust margin as needed */
+    }
+   
